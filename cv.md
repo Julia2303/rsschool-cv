@@ -1,5 +1,5 @@
-#Yuliya Kazakova
-##JavaScript Developer
+# Yuliya Kazakova
+## JavaScript Developer
 
 **Контакты**
 +375(29)898-96-90 (TG, Viber)
