@@ -34,11 +34,11 @@ To find the right company and the right mentor to enhance my professional skills
   **Responsibilities:** organization of technological processes in production, product warehouse management, certification and document management. 
 
   ## Education
-  **Polotsk State University**  
+  ### Polotsk State University  
   *2016-2020*    
   Economics and management  
   
-  **Courses**  
+  ### Courses 
   * CS50  
   * Основы программирования. Видеокурс - [GeekBrains](https://gb.ru/courses/754)  
   * [HTML Academy](https://htmlacademy.ru/courses)  
