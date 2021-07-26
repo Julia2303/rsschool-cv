@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CV Kazakova Yuliya</title>
+</head>
+<body class="page">
+    <div class="content_block">
+        <header class="page_header">
+            <img class="photo" src="img/Photo.png" width="170" alt="My photo">
+            <div>
+                <h1>YULIYA KAZAKOVA</h1>
+                <p>JavaScript Developer</p>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="first_column">
+                <section class="contact_info">
+                    <div class="container">
+                        <h2 class="title">CONTACT</h2>
+                        <ul>
+                            <li><a href="tel:+375298989690">+375(29)898-96-90</a></li>
+                            <li><a href="mailto:julia.kazakova23@gmail.com">julia.kazakova23@gmail.com</a></li>
+                            <li>GitHub: <a href="https://github.com/Julia2303">julia2303</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="skills">
+                    <div class="container">
+                        <h2 class="title">MY SKILLS</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Git</li>
+                            <li>Visual Studio Code</li>
+                            <li>Sublime Text</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="languages">
+                    <div class="container">
+                        <h2 class="title">LANGUAGES</h2>
+                        <ul>
+                            <li>English - B1(Intermediate)</li>
+                            <li>Russian - native</li>
+                            <li>Belarusian - native</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="courses">
+                    <div class="container">
+                        <h2 class="title">COURSES</h2>
+                        <ul>
+                            <li>CS50</li>
+                            <li>Основы программирования. Видеокурс - <a href="https://gb.ru/courses/754">GeekBrains</a></li>
+                            <li><a href="https://htmlacademy.ru/courses">HTML Academy</a></li>
+                            <li>JavaScript for beginners - <a href="https://stepik.org/course/2223/syllabus?auth=registration">Stepik</a></li>
+                            <li>JS / FRONT-END. STAGE 0 - <a href="https://rs.school/js-stage0">RS School</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="code">
+                    <div class="container">
+                        <h2 class="title">CODE</h2>
+                        <details>
+                            <summary>Example 1</summary>
+                            <pre>
+                                <code>
+                                    function testArray(a, b) {
+                                        let x = 0;
+                                        let y = 0;
+                                        for(let i = 0; i &lt; a.length; i++){
+                                           x += a[i];
+                                        }
+                                        for(let j = 0; j &lt; b.length; j++){
+                                            y += b[j];
+                                        }
+                                        return x + y;
+                                    }
+                                </code>
+                            </pre>
+                        </details>
+                        <details>
+                            <summary>Example 2</summary>
+                            <pre>
+                                <code>
+                                    function testCycle(a, b) {
+                                        let x=0;
+                                        while (a!=0 && b!=0){
+                                            if(a==b){
+                                                break;
+                                            } else if (a &gt; b) {
+                                                a=a-b;
+                                            } else {
+                                                b=b-a;
+                                            }
+                                        }
+                                        return a;
+                                    }
+                                </code>
+                            </pre>
+                        </details>
+                        <details>
+                            <summary>Example 3</summary>
+                            <pre>
+                                <code>
+                                    function testCycle(n) {
+                                        let x = "";
+                                        let y = 0;
+                                        for(let i = 1; i &lt; =2*n-1; i+=2){
+                                            y = y + i;
+                                            x = x + y + " ";
+                                        }
+                                        return x;
+                                    }
+                                </code>
+                            </pre>
+                        </details>
+                    </div>
+                </section>
+            </div>
+        
+            <div class="second_column">
+                <section class="about_myself">
+                    <div class="container">
+                        <h2 class="title">ABOUT MYSELF</h2>
+                        <p>I'm diligent, responsible and commited person. At 19 I opened my own business, and as a result of which I undertook the management of the production and certification process. Ouick learner and result-oriented: in a short period of time I acquired skills needed to manage company effectively.</p>
+                        <h3>GOAL</h3>
+                        <p>To find the right company along with the right mentor to enhance my professional skills.</p>
+                        <h3>PRIORITIES</h3>
+                        <ul>
+                            <li>financial independence</li>
+                            <li>career growth</li>
+                            <li>team recognition</li>
+                            <li>continuous development in the professional anf personal field</li>                            
+                        </ul>
+                    </div>
+                </section>
+                <section class="experience">
+                    <div class="container">
+                        <h2 class="title">EXPERIENCE</h2>
+                        <p><b>Individual Entrepreneur</b></p>
+                        <p><i>2019 - current time</i></p>
+                        <p>Responsibilities:</p>
+                        <ul>
+                            <li>organization of technological processes in production</li>
+                            <li>product warehouse management</li>
+                            <li>certification and document management</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="education">
+                    <div class="container">
+                        <h2 class="title">EDUCATION</h2>
+                        <p><b>Polotsk State University</b></p>
+                        <p><i>2016-2020</i></p>    
+                        <p>Bachelor of Economics and management </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="page_footer">
+            <div class="footer_container">
+                <a href="https://rs.school/js/"><img class="logo" src="img/rs_school_js.svg" width="70" alt="Logo RS School"></a>
+                <div class="info">
+                    <p>GitHub: <a href="https://github.com/Julia2303">Julia2303</a></p>
+                    <p>2021</p>
+                </div>
+            </div>
+        </footer>
+    </div>   
+</body>
+</html>
