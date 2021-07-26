@@ -28,19 +28,19 @@ To find the right company and the right mentor to enhance my professional skills
   * Russian - native
   * Belarusian - native
   
-  ## Experience
-  ### Individual Entrepreneur
-  *2019 - current time*  
-  **Responsibilities:** organization of technological processes in production, product warehouse management, certification and document management. 
+## Experience
+### Individual Entrepreneur
+*2019 - current time*  
+**Responsibilities:** organization of technological processes in production, product warehouse management, certification and document management. 
 
-  ## Education
-  ### Polotsk State University  
-  *2016-2020*    
-  Economics and management  
+## Education
+### Polotsk State University  
+*2016-2020*    
+Economics and management  
   
-  ### Courses 
-  * CS50  
-  * Основы программирования. Видеокурс - [GeekBrains](https://gb.ru/courses/754)  
-  * [HTML Academy](https://htmlacademy.ru/courses)  
-  * JavaScript for beginners - [Stepik](https://stepik.org/course/2223/syllabus?auth=registration)  
-  * JS / FRONT-END. STAGE 0 - [RS School](https://rs.school/js-stage0/)
+### Courses 
+* CS50  
+* Основы программирования. Видеокурс - [GeekBrains](https://gb.ru/courses/754)  
+* [HTML Academy](https://htmlacademy.ru/courses)  
+* JavaScript for beginners - [Stepik](https://stepik.org/course/2223/syllabus?auth=registration)  
+* JS / FRONT-END. STAGE 0 - [RS School](https://rs.school/js-stage0/)
