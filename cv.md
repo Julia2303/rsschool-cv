@@ -34,12 +34,13 @@ To find the right company and the right mentor to enhance my professional skills
   **Responsibilities:** organization of technological processes in production, product warehouse management, certification and document management. 
 
   ## Education
-  *2016-2020*
+  *2016-2020*  
   **Polotsk State University**  
-  Economics and management
-  ### Courses
+  Economics and management  
+  
+  **Courses**
     * CS50
-    * Основы программирования. Видеокурс ([GeekBrains](https://gb.ru/courses/754))
+    * Основы программирования. Видеокурс - [GeekBrains](https://gb.ru/courses/754)
     * [HTML Academy](https://htmlacademy.ru/courses)
-    * JavaScript for beginners ([Stepik](https://stepik.org/course/2223/syllabus?auth=registration))
-    * JS / FRONT-END. STAGE 0 ([RS School](https://rs.school/js-stage0/))
+    * JavaScript for beginners - [Stepik](https://stepik.org/course/2223/syllabus?auth=registration)
+    * JS / FRONT-END. STAGE 0 - [RS School](https://rs.school/js-stage0/)
