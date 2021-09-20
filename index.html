@@ -96,16 +96,18 @@
                                 <summary>Example 1</summary>
                                 <pre>
                                     <code>
-function testArray(a, b) {
-  let x = 0;
-  let y = 0;
-  for(let i = 0; i &lt; a.length; i++){
-    x += a[i];
+let runLengthEncoding = function(str){
+  let arr = [];
+  let count = 1;
+  for(let i = 0; i < str.length; i++) {
+    if(str[i] === str[i + 1]) {
+      count++;
+    } else {
+      arr.push([count, str[i]])
+      count = 1;
+    }
   }
-  for(let j = 0; j &lt; b.length; j++){
-    y += b[j];
-  }
-  return x + y;
+  return arr;
 }
                                     </code>
                                 </pre>
@@ -114,18 +116,13 @@ function testArray(a, b) {
                                 <summary>Example 2</summary>
                                 <pre>
                                     <code>
-function testCycle(a, b) {
-    let x=0;
-    while (a!=0 && b!=0){
-        if(a==b){
-            break;
-        } else if (a &gt; b) {
-            a=a-b;
-        } else {
-            b=b-a;
-        }
-    }
-    return a;
+function unluckyDays(year){
+  let count = 0;
+  for(let i = 0; i < 12; i++) {
+    let date = new Date(year, i, 13);
+    if(date.getDay() === 5) count++;
+  }
+  return count;
 }
                                     </code>
                                 </pre>
@@ -134,15 +131,11 @@ function testCycle(a, b) {
                                 <summary>Example 3</summary>
                                 <pre>
                                     <code>
-function testCycle(n) {
-    let x = "";
-    let y = 0;
-    for(let i = 1; i &lt; =2*n-1; i+=2){
-        y = y + i;
-        x = x + y + " ";
-    }
-    return x;
-}
+let validWord = function(dictionary, word) {
+  let words = dictionary.join('|');
+  const regex = new RegExp('^(' + words + ')*$');
+  return word.match(regex) ? true : false;
+};
                                     </code>
                                 </pre>
                             </details>
