@@ -1,3 +1,11 @@
+:root {
+    --bg: #F5F5F5;
+    --dark: #2F323D;
+    --white: #FFFFFF;
+    --hover: #87CEFA;
+    --active: #0000FF;
+}
+
 *,
 *::before, 
 *::after {
@@ -8,8 +16,8 @@
 }
 
 a {
-    text-decoration: none;
-    color: #FFFFFF;
+    text-decoration: none;  
+    color: var(--white);
 }
 
 ul,
@@ -24,40 +32,64 @@ h3 {
     font-size: inherit;
 }
 
-html,
-body {
-    /* height: 100%; */
-    line-height: 1;
-    font-family: "Open Sans";
-    font-size: 14px;
-    line-height: 20px;
-    color: #2F323D;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #F5F5F5
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 20px;
+    color: #2F323D;
+    background-color: var(--bg);
+    min-width: 320px;
 }
 
 .content-block {
     height: auto;
-    width: 900px;
+    max-width: 900px;
+    width: 100%;
     margin: 20px auto;
     overflow: hidden;
     box-shadow: 5px 5px 40px 10px #949494;
 }
 
-.main {
+.header {
+    background-color: var(--dark);
+    color: var(--white);
+}
+.header__container {
     display: flex;
-    
+    margin: 0 auto;
+}
+.header__menu {
+}
+.menu {
+}
+.menu__icon {
+}
+.menu__body {
+}
+
+.menu__list {
+    display: flex;
+}
+.menu__item {
+}
+.menu__link {
+}
+
+.main {
+    display: flex;  
 }
 
 .first-column {
-    color: #FFFFFF;
-    background-color: #2F323D;
+    color: var(--white);
+    background-color: var(--dark);
 }
 
 .second-column {
-    background-color: #FFFFFF;
+    background-color: var(--white);
 }
 
 .column-content {
@@ -70,20 +102,21 @@ body {
 
 .main-title {
     font-size: 50px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     line-height: 55px;
 }
 
 .subtitle {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .section-title {
     position: relative;
     margin-bottom: 40px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 .section-title::after {
@@ -93,15 +126,26 @@ body {
     left: 0;
     width: 50px;
     height: 2px;
-    background-color: #2F323D;
+    background-color: var(--dark);
+    transition: 1s;
+}
+
+
+.section-title:hover::after {
+    width: 100px;
+    transition: 1s;
 }
 
 .first-column .section-title::after {
-    background-color: #FFFFFF;
+    background-color: var(--white);
 }
 
-.avatar {
-    
+.name-section_hidden {
+    display: none;
+}
+
+.avatar-section {
+    text-align: center;
 }
 
 .image {
@@ -110,24 +154,28 @@ body {
     filter: grayscale(100%);
 }
 
-.contact-section p{
-    font-size: 16px;
+.info-block_subtitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .contact-item {
-    margin-top: 5px;
     margin-bottom: 15px;
+}
+
+.contact-link {
+    margin-top: 30px;
 }
 
 .contact-link:hover,
 .courses-link:hover {
-    color: #87CEFA;
+    color: var(--hover);
 }
 
-.info-block_subtitle {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 16px;
+.contact-link:active,
+.courses-link:active {
+    color: var(--active);
 }
 
 .skills-block {
@@ -144,23 +192,31 @@ body {
     width: 80px;
 }
 
+.skills-list-title {
+    transition: 0.5s;
+}
+
 .skills-list-title:hover {
-    font-size: 16px;
-    color:#87CEFA;
+    font-size: 18px;
+    color: var(--hover);
     transition: 0.5s;
     cursor: pointer;
+}
+
+.skills-list-title:active {
+    color: var(--active);
 }
 
 .skills-item, 
 .skills-item_grey {
     width: 14px;
     height: 14px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     border-radius: 50%;
 }
 
 .skills-item_grey {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .courses-item {
@@ -169,11 +225,63 @@ body {
     list-style: circle;
 }
 
-.footer {
+.footer-github {
+    color: var(--dark);
+}
+
+.footer-container {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     align-items: center;
+    font-weight: bold;
     background-color: #F6F6F6;
-    color: #000000;
+    color: var(--dark);
 }
+
+@media (max-width: 768px) {
+    .column-content {
+        margin: 30px 20px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .column-content {
+        margin: 20px 10px;
+    }   
+}
+
+@media (max-width: 500px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .column-content {
+        margin: 10px 10px;
+    }
+
+    .name-section {
+        display: none;
+    }
+    
+    .name-section_hidden {
+        display: initial;
+        text-align: center;
+    }
+
+    .main-title {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .profile-section {
+        margin-top: 20px;
+    }
+
+}
+
+

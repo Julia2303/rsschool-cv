@@ -14,7 +14,41 @@
 <body>
     <div class="content-block">
         <header class="header">        
-    
+            <div class="header__container">
+                <div class="header__menu menu">
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Contact</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Profile</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Skills</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Experience</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Languages</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Education</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Courses</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Code examples</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
         <main class="main">           
             <div class="first-column">
@@ -24,6 +58,10 @@
                             <img class="image" src="img/Photo.png" alt="Profile photo">
                         </figure>
                     </div>
+                    <section class="name-section_hidden">
+                        <h1 class="main-title">Yuliya<br>Kazakova</h1>
+                        <p class="subtitle">Front-end developer</p>
+                    </section>
                     <section class="info-block contact-section">
                             <h2 class="section-title">Contact</h2>
                             <ul>
@@ -150,8 +188,8 @@ let validWord = function(dictionary, word) {
                         <h1 class="main-title">Yuliya<br>Kazakova</h1>
                         <p class="subtitle">Front-end developer</p>
                     </section>
-                    <section class="info-block about-myself-section">
-                        <h2 class="section-title">About myself</h2>
+                    <section class="info-block profile-section">
+                        <h2 class="section-title">Profile</h2>
                         <p>I'm diligent, responsible and commited person. At 19 I opened my own business, and as a result of which I undertook the management of the production and certification process. Ouick learner and result-oriented: in a short period of time I acquired skills needed to manage company effectively.</p>
                         <h3 class="info-block_subtitle">Goal</h3>
                         <p>To find the right company along with the right mentor to enhance my professional skills.</p>
@@ -160,7 +198,7 @@ let validWord = function(dictionary, word) {
                             <li>financial independence</li>
                             <li>career growth</li>
                             <li>team recognition</li>
-                            <li>continuous development in the professional anf personal field</li>                            
+                            <li>continuous development in the professional and personal field</li>                            
                         </ul>
                     </section>
                     <section class="info-block experience-section">
@@ -184,8 +222,11 @@ let validWord = function(dictionary, word) {
             </div>
         </main>
         <footer class="footer">
-                <a href="https://rs.school/js/"><img class="logo" src="img/rs_school_js.svg" width="70" alt="Logo RS School"></a>
+            <div class="footer-container">
+                <a href="https://rs.school/js/"><img class="rs_logo" src="img/rs_school_js.svg" width="70" alt="Logo RS School"></a>
                 <p>2021</p>
+                <a href="https://github.com/Julia2303" class="footer-github"><img class="github_logo" src="img/github.svg" width="30" alt="Logo Github"></a>
+            </div>
         </footer>
     </div>
     <script src="script.js"></script>   
