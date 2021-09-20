@@ -80,6 +80,7 @@ body {
 }
 
 .menu__item {
+    padding: 10px;
     margin-right: 15px;
 }
 
@@ -299,8 +300,7 @@ body {
 @media (max-width: 900px) {
     .menu__list {
         position: fixed;
-        left: -100%;
-        top: 3rem;
+        top: -100%;
         flex-direction: column;
         background-color: var(--dark);
         width: 200px;
@@ -316,7 +316,7 @@ body {
     }
 
     .menu__list.active {
-        left: 0;
+        top: 50px;
     }
     
     .menu__icon.active .hamburger {
