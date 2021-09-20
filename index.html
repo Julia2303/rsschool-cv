@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <title>CV Kazakova Yuliya</title>
 </head>
 <body>
@@ -17,24 +16,20 @@
         <header class="header">        
     
         </header>
-
         <main class="main">           
             <div class="first-column">
                 <div class="column-content">
-                    <section class="avatar-section">
+                    <div class="avatar-section">
                         <figure class="avatar">
                             <img class="image" src="img/Photo.png" alt="Profile photo">
                         </figure>
-                    </section>
+                    </div>
                     <section class="info-block contact-section">
                             <h2 class="section-title">Contact</h2>
                             <ul>
-                                <p>Phone</p>
-                                <li class="contact-item"><a href="tel:+375298989690" class="contact-link">+375(29)898-96-90</a></li>
-                                <p>Email</p>
-                                <li class="contact-item"><a href="mailto:julia.kazakova23@gmail.com" class="contact-link">julia.kazakova23@gmail.com</a></li>
-                                <p>GitHub</p>
-                                <li class="contact-item"><a href="https://github.com/Julia2303" class="contact-link">julia2303</a></li>
+                                <li class="contact-item"><span class="info-block_subtitle">Phone</span><br><a href="tel:+375298989690" class="contact-link">+375(29)898-96-90</a></li>
+                                <li class="contact-item"><span class="info-block_subtitle">Email</span><br><a href="mailto:julia.kazakova23@gmail.com" class="contact-link">julia.kazakova23@gmail.com</a></li>
+                                <li class="contact-item"><span class="info-block_subtitle">Github</span><br><a href="https://github.com/Julia2303" class="contact-link">julia2303</a></li>
                             </ul>
                     </section>
                     <section class="info-block skills-section">
@@ -89,7 +84,7 @@
                         <h2 class="section-title">Courses</h2>
                         <ul class="courses-list">
                             <li class="courses-item">CS50</li>
-                            <li class="courses-item">Основы программирования. Видеокурс - <a href="https://gb.ru/courses/754" class="courses-link">GeekBrains</a></li>
+                            <li class="courses-item">Programming fundamentals - <a href="https://gb.ru/courses/754" class="courses-link">GeekBrains</a></li>
                             <li class="courses-item"><a href="https://htmlacademy.ru/courses" class="courses-link">HTML Academy</a></li>
                             <li class="courses-item">JavaScript for beginners - <a href="https://stepik.org/course/2223/syllabus?auth=registration" class="courses-link">Stepik</a></li>
                             <li class="courses-item">JS / FRONT-END. STAGE 0 - <a href="https://rs.school/js-stage0" class="courses-link">RS School</a></li>
@@ -100,17 +95,17 @@
                             <details>
                                 <summary>Example 1</summary>
                                 <pre>
-                                    <code class="html">
+                                    <code>
 function testArray(a, b) {
-    let x = 0;
-    let y = 0;
-    for(let i = 0; i &lt; a.length; i++){
-        x += a[i];
-    }
-    for(let j = 0; j &lt; b.length; j++){
-        y += b[j];
-    }
-    return x + y;
+  let x = 0;
+  let y = 0;
+  for(let i = 0; i &lt; a.length; i++){
+    x += a[i];
+  }
+  for(let j = 0; j &lt; b.length; j++){
+    y += b[j];
+  }
+  return x + y;
 }
                                     </code>
                                 </pre>
