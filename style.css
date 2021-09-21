@@ -80,6 +80,7 @@ body {
 }
 
 .menu__item {
+    padding: 10px;
     margin-right: 15px;
 }
 
@@ -237,6 +238,17 @@ body {
     list-style: circle;
 }
 
+.projects-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.project-image {
+    width: 230px;
+    height: 108px;
+}
+
 .footer-github {
     color: var(--dark);
 }
@@ -251,6 +263,12 @@ body {
     color: var(--dark);
 }
 
+@media (max-width: 860px) {
+    .project-image {
+        width: 190px;
+    }
+}
+
 @media (max-width: 768px) {
     .column-content {
         margin: 30px 20px;
@@ -258,6 +276,10 @@ body {
 
     .subtitle {
         font-size: 24px;
+    }
+
+    .projects-block {
+        flex-direction: column;
     }
 }
 
@@ -293,14 +315,12 @@ body {
     .profile-section {
         margin-top: 20px;
     }
-
 }
 
 @media (max-width: 900px) {
     .menu__list {
         position: fixed;
-        left: -100%;
-        top: 3rem;
+        top: -100%;
         flex-direction: column;
         background-color: var(--dark);
         width: 200px;
@@ -316,7 +336,7 @@ body {
     }
 
     .menu__list.active {
-        left: 0;
+        top: 50px;
     }
     
     .menu__icon.active .hamburger {
